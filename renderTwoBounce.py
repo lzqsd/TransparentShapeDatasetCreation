@@ -4,7 +4,6 @@ import glob
 import struct
 import cv2
 import scipy.ndimage as ndimage
-import open3d as o3d
 import os
 import argparse
 import struct

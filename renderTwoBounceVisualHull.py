@@ -4,7 +4,6 @@ import glob
 import struct
 import cv2
 import scipy.ndimage as ndimage
-import open3d as o3d
 import os
 import argparse
 import struct
@@ -12,7 +11,7 @@ import h5py
 
 parser = argparse.ArgumentParser()
 parser.add_argument('--mode', default='train')
-parser.add_argument('--renderProgram', default='./OptixRenderer/src/bin/optixRenderer', help='path to the rendering program')
+parser.add_argument('--renderProgram', default='../../OptixRenderer/src/bin/optixRenderer', help='path to the rendering program')
 parser.add_argument('--fileRoot', default='./Shapes/', help='path to the file root')
 parser.add_argument('--outputRoot', default='Images', help='path to the output root')
 parser.add_argument('--forceOutput', action='store_true', help='Overwrite previous results')
@@ -43,8 +42,6 @@ for n in range(rs, min(re, len(shapes)) ):
     else:
         print('Warning: output directory %s already exists' % (outputDir ) )
         results = glob.glob(osp.join(outputDir, 'imVH_%dtwoBounce_*.h5' % camNum ) )
-        print(results )
-        print(len(results ) )
         if len(results) == camNum:
             continue
 
