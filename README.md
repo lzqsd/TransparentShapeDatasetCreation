@@ -17,9 +17,9 @@ In order to run the code, you will need:
 
 ## Instructions 
 We will first go through the process of creating training set for 10 views reconstruction. The instructions to create 5-view and 20-view datasets will be given below. 
-1 `python createShape.py --mode train --rs 0 --re 3000`
+1. `python createShape.py --mode train --rs 0 --re 3000`
   * Create 3000 randomly generated scene as the training set. The data will be stored under the directory `./Shapes`
-2 `python`
+2. `python`
 
 ### Creating testing set
 To create the testing set, please set `--mode` to `test` and `--re` to 600 and rerun the follow
