@@ -10,3 +10,14 @@ We create transparent shape dataset by procedurally combining shape primitives t
 
 ## Prerequsites 
 In order to run the code, you will need to prepare:
+* Laval Indoor scene dataset:
+* Optix Renderer:
+* Colmap: 
+* Meshlab: 
+
+## Instructions 
+We will first go through the process of creating training set for 10 views reconstruction. The instructions to create 5-view and 20-view datasets will be given below. 
+
+### Creating testing set
+
+### Creating 5-view and 20-view dataset
