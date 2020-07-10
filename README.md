@@ -40,6 +40,7 @@ We will first go through the process of creating training set for 10 views recon
   * Render the ground-truth two-bounce normals and depths for visual hull geometry. 
 
 ### Creating testing set
-To create the testing set, please set `--mode` to `test` and `--re` to 600 and rerun all the commands from 1 to  again.
+To create the testing set, please set `--mode` to `test` and `--re` to 600 and rerun steps from 1 to 10  again.
 
 ### Creating 5-view and 20-view dataset
+To create the dataset for 5-view and 20-view reconstruction, at step 4, run `createCamera5.py` and `createCamera20.py` respectively. Run steps from 5 to 10 again but change `--camNum` to 5 and 20 respectively. 
