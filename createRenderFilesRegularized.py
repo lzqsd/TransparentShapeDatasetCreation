@@ -114,7 +114,7 @@ intIOR = opt.intIOR
 extIOR = opt.extIOR
 
 shapes = glob.glob(osp.join(fileRoot, mode, 'Shape*') )
-envmapNames = glob.glob(osp.join(envRoot, mode, '*L.hdr') )
+envmapNames = glob.glob(osp.join(envRoot, mode, '*.hdr') )
 print('Total Number of %d envmap' % len(envmapNames ) )
 np.random.seed(rs )
 
