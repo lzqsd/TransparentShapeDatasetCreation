@@ -10,8 +10,8 @@ We create transparent shape dataset by procedurally combining shape primitives t
 
 ## Prerequsites 
 In order to run the code, you will need to prepare:
-* Laval Indoor scene dataset: Please download the dataset from this [link](http://indoor.hdrdb.com/). We use 1499 environment map for training and 645 environment map for testing. Please turn the `.exr` files into `.hdr` files, since our renderer does not support loading `.exr` files yet. 
-* Optix Renderer:
+* Laval Indoor scene dataset: Please download the dataset from this [link](http://indoor.hdrdb.com/). We use 1499 environment map for training and 645 environment map for testing. Please turn the `.exr` files into `.hdr` files, since our renderer does not support loading `.exr` files yet. Please save the training set and testing set in `./Envmap/train` and `./Envmap/test` separately.
+* Optix Renderer: Please download our Optix-based renderer from this [link](https://github.com/lzqsd/OptixRenderer). There is an Optix renderer included in this repository. But that renderer is specificly modified to render the two-bounce normal. Please use the renderer from the [link](https://github.com/lzqsd/OptixRenderer) to render images. 
 * Colmap: 
 * Meshlab: 
 
