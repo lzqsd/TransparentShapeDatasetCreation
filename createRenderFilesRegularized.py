@@ -83,7 +83,6 @@ def addEnv(root, envmapName, scaleFloat):
 
 
 parser = argparse.ArgumentParser()
-parser.add_argument('--imNum', type=int, default=10, help='the number of camera view')
 parser.add_argument('--imWidth', type=int, default=480, help='image width')
 parser.add_argument('--imHeight', type=int, default=360, help='image height')
 parser.add_argument('--sampleCount', type=int, default=512, help='the number of samples')
@@ -99,7 +98,7 @@ parser.add_argument('--extIOR', type=float, default=1.0003, help='the index of r
 opt = parser.parse_args()
 print(opt )
 
-imNum = opt.imNum
+
 imHeight = opt.imHeight
 imWidth = opt.imWidth
 fovValue = opt.fov
