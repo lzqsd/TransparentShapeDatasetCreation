@@ -19,5 +19,7 @@ In order to run the code, you will need:
 We will first go through the process of creating training set for 10 views reconstruction. The instructions to create 5-view and 20-view datasets will be given below. 
 
 ### Creating testing set
+* `python createShape.py --mode train --rs 0 --re 3000`
+
 
 ### Creating 5-view and 20-view dataset
