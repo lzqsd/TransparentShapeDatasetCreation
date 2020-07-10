@@ -90,7 +90,7 @@ parser.add_argument('--sampleCount', type=int, default=512, help='the number of 
 parser.add_argument('--fov', type=float, default=63.4149, help='the field of view in x axis')
 parser.add_argument('--dist', type=float, default=3.0, help='the distance from camera to the target point')
 parser.add_argument('--mode', default='train')
-parser.add_argument('--envRoot', default='/home/zhl/CVPR20/TransparentShape/Data/Envmaps/', help='path to environmental map root')
+parser.add_argument('--envRoot', required=True, help='absolute path to environmental map root')
 parser.add_argument('--fileRoot', default='./Shapes/', help='path to the file root')
 parser.add_argument('--rs', default = 0, type=int, help='the starting point')
 parser.add_argument('--re', default = 300, type=int, help='the end point')
