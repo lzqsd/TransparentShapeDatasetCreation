@@ -10,7 +10,7 @@ We create transparent shape dataset by procedurally combining shape primitives t
 
 ## Prerequsites 
 In order to run the code, you will need to prepare:
-* Laval Indoor scene dataset:
+* Laval Indoor scene dataset: Please download the dataset from this [link](http://indoor.hdrdb.com/). 
 * Optix Renderer:
 * Colmap: 
 * Meshlab: 
