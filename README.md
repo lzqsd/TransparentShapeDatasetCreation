@@ -11,9 +11,9 @@ We create transparent shape dataset by procedurally combining shape primitives t
 ## Prerequsites 
 In order to run the code, you will need to prepare:
 * Laval Indoor scene dataset: Please download the dataset from this [link](http://indoor.hdrdb.com/). We use 1499 environment map for training and 645 environment map for testing. Please turn the `.exr` files into `.hdr` files, since our renderer does not support loading `.exr` files yet. Please save the training set and testing set in `./Envmap/train` and `./Envmap/test` separately.
-* Optix Renderer: Please download our Optix-based renderer from this [link](https://github.com/lzqsd/OptixRenderer). There is an Optix renderer included in this repository. But that renderer is specificly modified to render the two-bounce normal. Please use the renderer from the [link](https://github.com/lzqsd/OptixRenderer) to render images. 
-* Colmap: 
-* Meshlab: 
+* Optix Renderer: Please download our Optix-based renderer from this [link](https://github.com/lzqsd/OptixRenderer). There is an Optix renderer included in this repository. But it is the renderer specifically modified to render the two-bounce normal. Please use the renderer from the [link](https://github.com/lzqsd/OptixRenderer) to render images. 
+* Colmap: Please install Colmap from this [link](https://colmap.github.io/). We use Colmap to reconstruct mesh from point cloud. 
+* Meshlab: Please install [Meshlab](https://www.meshlab.net/). We use the subdivision algorithm in Meshlab to smooth the surface so that there is no artifacts when rendering transparent shape. 
 
 ## Instructions 
 We will first go through the process of creating training set for 10 views reconstruction. The instructions to create 5-view and 20-view datasets will be given below. 
