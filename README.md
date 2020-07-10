@@ -22,7 +22,7 @@ We will first go through the process of creating training set for 10 views recon
 2. `python createRenderFilesForDepths.py --mode train --rs 0 --re 3000`
   * Create the camera poses and the xml files for rendering depth maps. For each shape, it will uniformly sample 75 poses surronding the shape. 
 3. `python renderAndIntegrate.py --mode train --rs 0 --re 3000 --renderProgram ABSOLUTE_PATH_TO_RENDERER_GENERAL`
-  * For each shape, we render 75 depth maps from different views and fuse the depth map together to generate a mesh. After that, we use subdivision to smooth the generated surface. The purpose of this step is to remove the intersection of the randomly generated scene and keep only the outersurface. 
+  * For each shape, we render 75 depth maps from different views and fuse the depth map together to generate a mesh. After that, we use subdivision to smooth the generated surface. The purpose of this step is to remove the inner surface and keep only the outer surface. 
 
 ### Creating testing set
 To create the testing set, please set `--mode` to `test` and `--re` to 600 and rerun all the above commands again.
