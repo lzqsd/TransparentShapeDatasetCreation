@@ -6,6 +6,7 @@ This repository contains the code to create the transparent shape dataset in pap
 
 ## Overview 
 We create transparent shape dataset by procedurally combining shape primitives to create complex sceenes. An overview of our dataset creation pipeline is shown below. Please refer to our [paper](https://arxiv.org/abs/2004.10904) for more details. 
+![](http://cseweb.ucsd.edu/~viscomp/projects/CVPR20Transparent/github/dataset.png)
 
 ## Prerequsites 
 In order to run the code, you will need to prepare:
